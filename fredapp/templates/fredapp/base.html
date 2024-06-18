@@ -1,0 +1,91 @@
+{% extends "fredapp/master.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} Fredice Music home {% endblock %}
+    <link rel="stylesheet" href="{% static 'fredapp/style.css' %}?20240528?20240528">
+</head>
+<body>
+    {% block content %}
+    <main>
+        <section class="top">
+            <div id="bck-img"></div>
+            <div class="top-left">
+                <h1>New Music</h1>
+                <p class="text">
+                    Discover the soul-stirring tunes and captivating lyrics that define FredIce's unique sound. 
+                    From intimate acoustic melodies to high-energy anthems, immerse yourself in a musical journey that transcends boundaries and touches hearts worldwide.
+                </p>
+                <div class="top_left_grp">
+                    <h2>Play</h2>
+                    <h2>Listen</h2>
+                    <h2>Share</h2>   
+                </div>               
+            </div>
+        </section>
+
+        <section class="discover">
+            <div class="discover-left"></div>
+            <div class="dicover-right">
+                <div class="about-us">
+                    <h1>About Me</h1>
+                    <p>I have been singing and rapping since I was a teenager</p>
+                </div>
+            </div>
+        </section>
+        <section class="third">
+            <div class="third-left">
+                <div class="third-text">
+                    <h3>Dicover</h3>
+                </div>
+            </div>
+            <div class="third-right"></div>
+        </section>
+    </main>
+
+    
+    {% endblock %}
+</body>
+</html>
+
+
+
+<div class="discover_1">
+    <div class="discover_semi"></div>
+    <h4>HJHCAKHCEJHCOUH</h4>
+</div>
+
+<div class="dicover_2">
+   
+    <p>
+        Discover the soul-stirring tunes and captivating lyrics that define FredIce's unique sound. 
+        From intimate acoustic melodies to high-energy anthems, immerse yourself in a musical journey that transcends boundaries and touches hearts worldwide.
+    </p>
+</div>
+<div class="Explore" href="{% url 'album_list' %}">
+    <H3>Explore</H3>
+    <p>
+        Explore the latest releases, upcoming tour dates, and exclusive behind-the-scenes content.
+        Join our community of music lovers and experience the magic of FredIce's artistry firsthand.
+
+    </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ready to embark on a sonic adventure? Dive into [Musician's Name]'s discography, shop for merch, and stay connected through our social channels. Whether you're a long-time fan or just discovering our music, there's always something new to explore in [Musician's Name]'s vibrant world.

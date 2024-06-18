@@ -1,0 +1,42 @@
+{% extends url "fredapp/master.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        {{ post.title }} - FredIce Music
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% block content %}
+    <header>
+        <h1>FredIce Music</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'blog-home' %}">Home</a></li>
+                <li><a href="{% url 'contact-home' %}">Contact</a></li>
+                <!-- Add other navigation links here -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>{{ post.title }}</h2>
+            <p>by {{ post.author }} on {{ post.date_posted|date:"F j, Y, g:i a" }}</p>
+            <div>
+                {{ post.content }}
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FredIce Music</p>
+    </footer>
+    {% endblock %}
+</body>
+</html>

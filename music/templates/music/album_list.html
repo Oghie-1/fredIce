@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Album List</title>
+</head>
+<body>
+    <h1>Albums</h1>
+    <ul>
+        {% for album in albums %}
+        <li>{{ album.title }} by {{ album.artist }} ({{ album.release_date }} - {{ album.genre }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
