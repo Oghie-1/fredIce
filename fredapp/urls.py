@@ -1,8 +1,8 @@
 from django.urls import path
 from . import views
 
-app_name = 'fredapp'
+app_name = 'fredapp'  # Ensure this matches the namespace used in your include
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('home', views.homepage, name='home'),  # Root URL for the home page
 ]

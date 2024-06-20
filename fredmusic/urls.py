@@ -24,5 +24,5 @@ urlpatterns = [
     path('blog/', include("blog.urls")),
     path('contact/', include("contact.urls")),
     path("music/", include("music.urls")),
-    path('home', include('fredapp.urls')), 
+    path('', include('fredapp.urls')), 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

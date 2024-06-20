@@ -6,26 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{% static 'fredapp/style.css' %}?20240528?20240528">
         <title>{% block title %}{% endblock %}</title>
-
     </head>
     <body>
         <div class="header">
             <header>
-                <h1><a href="{% url 'home' %}">FredIce Music</a></h1>
+                <h1><a href="{% url 'fredapp:home' %}">FredIce Music</a></h1>  <!-- Use namespace 'fredapp' -->
                 <nav>
                     <ul>
-                        <li class="nav-list"><a href="{% url 'blog-home' %}">Blog</a></li>
-                        <li class="nav-list"><a href="{% url 'contact-home' %}">Music</a></li>
-                        <li class="nav-list"><a href="{% url 'contact-home' %}">Videos</a></li>
-                        <li class="nav-list"><a href="{% url 'contact-home' %}">Tour</a></li>
-                        <li class="nav-list"><a href="{% url 'contact-home' %}">Shop</a></li>
-                        <li class="nav-list"><a href="{% url 'contact-home' %}">Contact</a></li>
+                        <li class="nav-list"><a href="{% url 'blog:blog-home' %}">Blog</a></li>
+                        <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Music</a></li>
+                        <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Videos</a></li>
+                        <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Tour</a></li>
+                        <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Shop</a></li>
+                        <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Contact</a></li>
                         <!-- Add other navigation links here -->
                     </ul>
                 </nav>
             </header>
             <div class="brkline"></div>
-    
         </div>
         {% block content %}
         {% endblock %}
@@ -33,5 +31,4 @@
             <p>&copy; 2024 FredIce Music</p>
         </footer>
     </body>
-    
 </html>

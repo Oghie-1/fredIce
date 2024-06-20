@@ -5,5 +5,5 @@ from django.views import View, generic
 
 # Create your views here.
 
-def home(request):
+def homepage(request):
     return render(request, 'fredapp/base.html')
