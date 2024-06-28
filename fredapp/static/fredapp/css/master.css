@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: whitesmoke;
     color: lightsalmon;
+    width: 100%;
+    position: fixed;
 }
 
 .nav-wrap {
