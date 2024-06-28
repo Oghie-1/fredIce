@@ -4,17 +4,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{% static 'fredapp/style.css' %}?20240528?20240528">
+        <link rel="stylesheet" href="{% static 'fredapp/css/master.css' %}?20240528?20240528">
         <title>{% block title %}{% endblock %}</title>
     </head>
     <body>
-        <div class="header">
+        <section class="nav-wrap">
             <header>
-                <h1><a href="{% url 'fredapp:home' %}">FredIce Music</a></h1>  <!-- Use namespace 'fredapp' -->
+                <h1><a class="Title" href="{% url 'fredapp:home' %}">FredIce Music</a></h1> <!-- Use namespace 'fredapp' -->
                 <nav>
                     <ul>
-
-
+        
+        
                         <li class="nav-list"><a href="{% url 'blog:blog-home' %}">Blog</a></li>
                         <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Music</a></li>
                         <li class="nav-list"><a href="{% url 'contact:contact-home' %}">Videos</a></li>
@@ -26,7 +26,7 @@
                 </nav>
             </header>
             <div class="brkline"></div>
-        </div>
+        </section>
         {% block content %}
         {% endblock %}
         <footer>
