@@ -104,10 +104,17 @@
     justify-content: center;
     position: relative;
     z-index: 3;
-    margin-top: 9em;
+    top: 20em;
 
 }
 
+.section-inset-right:hover {
+    display: block;
+    background-color: salmon;
+    opacity: 0.8;
+    box-shadow: 2px 3px rgb(70, 130, 180, 0.8);
+    border-radius: 2px;
+}
 /* Text wrap styles */
 .text-wrap {
     width: auto;
@@ -132,15 +139,23 @@
 
 }
 
+.text:hover {
+    color: black;
+    box-shadow: 1px 1px black;
+}
+
 /* Section inset bottom styles */
 .section-inset-bottom {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin: 20px auto;
-    top: 18rem;
     z-index: 5;
     color: orangered;
+    top: 5em;
+}
+
+.btn-wrap {
+    margin: 0 auto;
 }
 
 .section-inset-bottom h2 {
@@ -305,7 +320,7 @@ iframe {
 .fifth-section {
     justify-content: center;
     height: 600px;
-    background-color: white;
+    background-image: url("/static/fredapp/media/img/bck_img.webp");
 }
 
 .contact_wrap {
@@ -313,10 +328,19 @@ iframe {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    color: whitesmoke;
 }
 
 .contact_wrap h4 {
     font-weight: 800;
-    font-size: 24px;
+    font-size: 32px;
     align-self: center;
+}
+
+.contact-grid {
+    flex-direction: row;
+    background-color: azure;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
 }
