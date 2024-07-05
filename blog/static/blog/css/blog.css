@@ -1,3 +1,36 @@
+
+@keyframes circular {
+    0% {background-color: #303333;
+        color: salmon;
+        left:350px; top:250px;
+        right:350px; bottom:250px;
+    }
+    25% {background-color: salmon;
+        color: #303333;
+        right:300px; top:200px;
+        left:300px; bottom:200px;
+    }
+    50% {background-color: orangered;
+        color: whitesmoke;
+        left:250px; top:150px;
+        right:250px; bottom:150px;
+    }
+    75% {background-color: whitesmoke;
+        color: orangered;
+        left:200px; bottom:100px;
+        right:200px; top:100px;
+    }
+    100% {background-color: #303333;
+        left:150px; bottom:50px;
+        right:150px; bottom:50px;
+    }
+}
+
+
+
+
+
+
 body {
     position: absolute;
    
@@ -58,8 +91,7 @@ body {
 
 .grid1,
 .grid2,
-.grid3,
-.blo_grid1 {
+.grid3 {
     width: 33%;
     height: 150px;
     margin: 10px 5px;
@@ -67,6 +99,10 @@ body {
 
 .grid1 {
     background-color: #303333;
+    -webkit-mask-image: url("/static/fredapp/media/img/record_slide.jpg");
+    mask-image: url("/static/fredapp/media/img/record_slide.jpg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 .grid2 {
@@ -120,19 +156,69 @@ aside {
     box-shadow: 1px 2px 3px salmon;
 }
 
-.blo_grid1 {
+.blo_grid {
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+    border: 1px solid orangered;
+    
+}
+
+.blo_grid2 {
+    width: 200px;
+    height: 200px;
+    margin: 15px auto; 
+    
+}
+
+.blo_grid2,
+.blo_grid3 {
+    position: relative;
+}
+
+.blo_grid3 {
+    width: 100px;
+    height: 100px;
+}
+
+.blo_grid3:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.blo_grid1,
+.blo_grid2,
+.blo_grid3 {
     border-radius: 50%;
     background-color: #303333;
-    justify-self: center;
-    align-items: center;
+    align-self: center;
     text-align: center;
-    justify-content: center;
     align-content: center;
     margin: auto;
+    box-shadow: 3px 5px 8px black;
+    animation-name: circular;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    
 }
 
 .blo_grid1 h3 {
     margin: 60px auto;
     padding: 5px;
     text-align: center;
+}
+
+svg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+circle {
+    cx: "75";
 }
