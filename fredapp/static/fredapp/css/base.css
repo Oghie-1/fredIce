@@ -338,9 +338,17 @@ iframe {
 }
 
 .contact-grid {
+    display: flex;
     flex-direction: row;
+    padding: 20px;
     background-color: azure;
     width: 60%;
     height: 300px;
     margin: 0 auto;
+    color: salmon;
+    border-radius: 1.5%;
+}
+
+.contact {
+    background-color: aquamarine;
 }
