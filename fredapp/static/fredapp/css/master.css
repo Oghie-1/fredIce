@@ -13,7 +13,7 @@ body {
 .nav-wrap {
     display: flex;
     width: 100%;
-    background-color: rgb(99, 3, 3);
+    background-image: url("/static/fredapp/media/img/steel_mike.jpg");
     font-family: 'Raleway';
     font-size: 20px;
     font-weight: 800;

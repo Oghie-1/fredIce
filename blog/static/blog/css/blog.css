@@ -2,27 +2,22 @@
 @keyframes circular {
     0% {background-color: #303333;
         color: salmon;
-        left:350px; top:250px;
-        right:350px; bottom:250px;
+        left:75px; top:50px;
     }
     25% {background-color: salmon;
         color: #303333;
-        right:300px; top:200px;
-        left:300px; bottom:200px;
+        right:75px; top:50px;
     }
     50% {background-color: orangered;
         color: whitesmoke;
-        left:250px; top:150px;
-        right:250px; bottom:150px;
+        left:50px; top:25px;
     }
     75% {background-color: whitesmoke;
         color: orangered;
-        left:200px; bottom:100px;
-        right:200px; top:100px;
+        right:50px; top:25px;
     }
     100% {background-color: #303333;
-        left:150px; bottom:50px;
-        right:150px; bottom:50px;
+        left:25px; bottom:5px;
     }
 }
 
@@ -40,6 +35,8 @@ body {
 .blog-wrapper {
     width: 80%;
     margin: 0 auto;
+    top: -1.7em;
+    padding: 0;
     position: relative;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -47,18 +44,38 @@ body {
     align-content: center;
     align-self: center;
     text-align: center;
-    background-color: white;
-
+    background-image: url("/static/fredapp/media/img/rec_1.jpg");
 }
+
+
+.blog-wrapper,
+.discover_2,
+.section-wrap,
+.grid1,
+.grid2,
+.grid3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
 .blog_header {
     font-size: 24px;
-    color: #303333;
-    margin: 30px auto;
+    color: #ffffff;
+    margin: 30px auto 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+
+
     
 }
 .blog_header h2 {
-    padding: 20px;
+    padding: 0;
+    font-family: Copperplate, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
     
 }
 
@@ -72,12 +89,37 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+
+}
+
+.first {
+    background-color: transparent;
+}
+
+.blog-section {
+    background-image: url("/static/blog/media/yel_bck.jpg");
+    background-color: transparent;
 }
 
 .discover_2 {
     margin: 0 auto;
     padding: 0;
     color: #303333;
+    background-image: url("/static/blog/media/guitar_case.jpg");
+
+}
+
+.headliner-text {
+    font-family: Lucida Handwriting Fantasy;
+    color: rgba(255, 190, 49, 0.978);
+    word-spacing: 2px;
+    font-size: 21px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgba(48, 48, 48, 0.4);
+    width: 80%;
+    height: 100px;
+    text-shadow: 1px 1px rgba(48, 48, 48, 0.4);
 
 }
 
@@ -85,28 +127,37 @@ body {
     display: flex;
     flex-direction: row;
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
     padding: 10px;
+    justify-content: center;
 }
 
 .grid1,
 .grid2,
 .grid3 {
-    width: 33%;
+    width: 150px;
     height: 150px;
     margin: 10px 5px;
 }
 
 .grid1 {
     background-color: #303333;
-    -webkit-mask-image: url("/static/fredapp/media/img/record_slide.jpg");
-    mask-image: url("/static/fredapp/media/img/record_slide.jpg");
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
+    background-image: url("/static/fredapp/media/img/record_slide.jpg");
+    display: inline-flex;
+}
+
+.grid1_sub {
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 20px auto;
+    align-self: center;
+    text-align: center;
 }
 
 .grid2 {
     background-color: salmon;
+    background-image: url("/static/fredapp/media/img/record_slide.jpg");
 }
 
 .grid3 {
@@ -125,6 +176,7 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-image: url("/static/blog/media/gold_bck.jpg");
 }
 
 .blog-text {
@@ -157,28 +209,30 @@ aside {
 }
 
 .blo_grid {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 150px;
     margin: 15px auto;
-    border: 1px solid orangered;
+    border: 1px solid rgb(255, 232, 84, 0.3);
     
 }
 
 .blo_grid2 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 100px;
     margin: 15px auto; 
     
 }
 
+.blo_grid1,
 .blo_grid2,
 .blo_grid3 {
     position: relative;
+    background-color: transparent;
 }
 
 .blo_grid3 {
     width: 100px;
-    height: 100px;
+    height: 50px;
 }
 
 .blo_grid3:hover {
@@ -190,12 +244,12 @@ aside {
 .blo_grid2,
 .blo_grid3 {
     border-radius: 50%;
-    background-color: #303333;
+    background-color: #ac8900;
     align-self: center;
     text-align: center;
     align-content: center;
     margin: auto;
-    box-shadow: 3px 5px 8px black;
+    box-shadow: 3px 5px 8px rgb(126, 121, 59);
     animation-name: circular;
     animation-duration: 10s;
     animation-delay: -2s;
@@ -209,16 +263,16 @@ aside {
     margin: 60px auto;
     padding: 5px;
     text-align: center;
+    font-family: Lucida Handwriting Fantasy;
 }
 
 svg {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-}
-
-circle {
-    cx: "75";
+    width: 100px;
+    justify-items: center;
+    align-content: center;
+    height: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    background-color: salmon;
+    border-radius: 50%;
 }

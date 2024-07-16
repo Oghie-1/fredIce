@@ -1,0 +1,275 @@
+
+@keyframes circular {
+    0% {background-color: #303333;
+        color: salmon;
+        left:75px; top:50px;
+    }
+    25% {background-color: salmon;
+        color: #303333;
+        right:75px; top:50px;
+    }
+    50% {background-color: orangered;
+        color: whitesmoke;
+        left:50px; top:25px;
+    }
+    75% {background-color: whitesmoke;
+        color: orangered;
+        right:50px; top:25px;
+    }
+    100% {background-color: #303333;
+        left:25px; bottom:5px;
+    }
+}
+
+
+
+
+
+
+body {
+    position: absolute;
+   
+}
+
+
+.blog-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    top: -1.7em;
+    padding: 0;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    background-image: url("/static/fredapp/media/img/rec_1.jpg");
+
+}
+
+
+.blog-wrapper,
+.discover_2,
+.grid1,
+.grid2,
+.grid3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.blog_header {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 30px auto 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+
+
+    
+}
+.blog_header h2 {
+    padding: 0;
+    font-family: Copperplate, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    
+}
+
+.first,
+.blog-section {
+    max-width: 100%;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+}
+
+.first {
+    background-color: transparent;
+}
+
+.blog-section {
+    background-image: url("/static/blog/media/steel_mike.jpg");
+    background-color: transparent;
+}
+
+.discover_2 {
+    margin: 0 auto;
+    padding: 0;
+    color: #303333;
+    background-image: url("/static/blog/media/guitar_case.jpg");
+
+}
+
+.headliner-text {
+    font-family: Lucida Handwriting Fantasy;
+    color: rgba(255, 190, 49, 0.978);
+    word-spacing: 2px;
+    font-size: 21px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgba(48, 48, 48, 0.4);
+    width: 80%;
+    height: 100px;
+    text-shadow: 1px 1px rgba(48, 48, 48, 0.4);
+
+}
+
+.blog-grid {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.grid1,
+.grid2,
+.grid3 {
+    width: 150px;
+    height: 150px;
+    margin: 10px 5px;
+}
+
+.grid1 {
+    background-color: #303333;
+    background-image: url("/static/fredapp/media/img/record_slide.jpg");
+    display: inline-flex;
+}
+
+.grid1_sub {
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 20px auto;
+    align-self: center;
+    text-align: center;
+}
+
+.grid2 {
+    background-color: salmon;
+    background-image: url("/static/fredapp/media/img/record_slide.jpg");
+}
+
+.grid3 {
+    background-color: orangered;
+}
+
+.blog-section {
+    background-color: aquamarine;
+    max-height: 450px;
+}
+
+
+.section-wrap {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text {
+    font-family: "Raleway";
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+
+aside {
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.listen_btn {
+    padding: 7px 25px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #303333;
+    background-color: orangered;
+    color: whitesmoke;
+    box-shadow: 1px 2px 3px salmon;
+
+}
+
+.listen_btn:hover {
+    border:orangered;
+    background-color: #303333;
+    box-shadow: 1px 2px 3px salmon;
+}
+
+.blo_grid {
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+    border: 1px solid orangered;
+    
+}
+
+.blo_grid2 {
+    width: 200px;
+    height: 200px;
+    margin: 15px auto; 
+    
+}
+
+.blo_grid2,
+.blo_grid3 {
+    position: relative;
+}
+
+.blo_grid3 {
+    width: 100px;
+    height: 100px;
+}
+
+.blo_grid3:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.blo_grid1,
+.blo_grid2,
+.blo_grid3 {
+    border-radius: 50%;
+    background-color: #303333;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    box-shadow: 3px 5px 8px black;
+    animation-name: circular;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.blo_grid1 h3 {
+    margin: 60px auto;
+    padding: 5px;
+    text-align: center;
+    font-family: Lucida Handwriting Fantasy;
+}
+
+svg {
+    width: 100px;
+    justify-items: center;
+    align-content: center;
+    height: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    background-color: salmon;
+    border-radius: 50%;
+}
